@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tanakorn.register.chat">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/mm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="message"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="send"
+            android:onClick="sendM"
+            />
+    </LinearLayout>
+</LinearLayout>
